@@ -1,10 +1,12 @@
 import React, { useEffect, useState} from 'react';
+import { Link } from 'react-router-dom';
 
 import './Apparel.css';
 import Image1 from '../images/image1.png';
 import Image2 from '../images/image2.png';
 import Image3 from '../images/image3.png';
 import SP25ShirtFront from '../images/Spring25_Shirt_Front.jpg'
+import SP25ShirtBack from '../images/Spring25_Shirt_Back.jpg'
 import SP25HoodieFront from '../images/Spring25_Hoodie_Front.jpg'
 import SP25HoodieBack from '../images/Spring25_Hoodie_Back.jpg'
 import DTJShirtFront from '../images/DTJ_Shirt_Front.jpg'
@@ -12,6 +14,9 @@ import DTJShirtBack from '../images/DTJ_Shirt_Back.jpg'
 import DTJCrewFront from '../images/DTJ_Crewneck_Front.jpg'
 import DTJCrewBack from '../images/DTJ_Crewneck_Back.jpg'
 import DTJSweats from '../images/DTJ_Sweatpants.jpg'
+
+export {SP25ShirtFront, SP25ShirtBack, SP25HoodieFront, SP25HoodieBack,
+DTJShirtFront, DTJShirtBack, DTJCrewFront, DTJCrewBack, DTJSweats};
 
 const Apparel = () => {
 
@@ -51,9 +56,9 @@ const Apparel = () => {
       <div className="apparel-blocks">
         <div className="apparel-item">
           <img src={SP25ShirtFront} alt="Spring 2025 Shirt Front" className="sp25-apparel-cover"/>
-          <div className="order-button">
+          <Link className="order-button" to="/order?apparel=sp25shirt">
             Order
-          </div>
+          </Link>
         </div>
         <div className="apparel-item">
           <img src={SP25HoodFront} alt="Spring 2025 Hoodie Front" className="sp25-apparel-cover"

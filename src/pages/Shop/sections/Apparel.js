@@ -51,28 +51,40 @@ const Apparel = () => {
       <div className="apparel-blocks">
         <div className="apparel-item">
           <img src={SP25ShirtFront} alt="Spring 2025 Shirt Front" className="sp25-apparel-cover"/>
+          <div className="order-button">
+            Order
+          </div>
         </div>
-        <div className="apparel-item"
-         onMouseEnter={hoodie25HoverEnter}
-         onMouseLeave={hoodie25HoverLeave}>
-          <img src={SP25HoodFront} alt="Spring 2025 Hoodie Front" className="sp25-apparel-cover"/>
+        <div className="apparel-item">
+          <img src={SP25HoodFront} alt="Spring 2025 Hoodie Front" className="sp25-apparel-cover"
+          onMouseEnter={hoodie25HoverEnter} onMouseLeave={hoodie25HoverLeave}/>
+          <div className="order-button">
+            Order
+          </div>
         </div>
       </div>
 
       <h2>DTJ</h2>
        <div className="apparel-blocks">
-        <div className="apparel-item"
-        onMouseEnter={dtjShHoverEnter}
-        onMouseLeave={dtjShHoverLeave}>
-          <img src={DTJShFront} alt="DTJ Shirt Front" className="dtj-apparel-cover"/>
+        <div className="apparel-item">
+          <img src={DTJShFront} alt="DTJ Shirt Front" className="dtj-apparel-cover"
+           onMouseEnter={dtjShHoverEnter} onMouseLeave={dtjShHoverLeave}/>
+           <div className="order-button">
+            Order
+          </div>
         </div>
-        <div className="apparel-item"
-        onMouseEnter={dtjCrHoverEnter}
-        onMouseLeave={dtjCrHoverLeave}>
-          <img src={DTJCrFront} alt="DTJ Crewneck Front" className="dtj-apparel-cover"/>
+        <div className="apparel-item">
+          <img src={DTJCrFront} alt="DTJ Crewneck Front" className="dtj-apparel-cover"
+           onMouseEnter={dtjCrHoverEnter} onMouseLeave={dtjCrHoverLeave}/>
+           <div className="order-button">
+            Order
+          </div>
         </div>
         <div className="apparel-item">
           <img src={DTJSweats} alt="DTJ Sweatpants" className="dtj-apparel-cover"/>
+          <div className="order-button">
+            Order
+          </div>
         </div>
       </div>
 
